@@ -34,7 +34,7 @@
  <div class="team teamB"><div class="name" id="teamB">AWAY</div><div class="num" id="scoreB">0</div></div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
-const q=new URLSearchParams(location.search),url=q.get('url'),key=q.get('key'),room=q.get('room')||'matchday';
+const q=new URLSearchParams(location.search),url=q.get('url')||'https://eyimquzlarsspzqqsvdw.supabase.co',key=q.get('key')||'sb_publishable_oOLV4NWS5lafVsshmn7Dwg_OrccbEQr',room=q.get('room')||'matchday';
 function ordinal(n){n=Number(n)||1;return n+(n%100>=11&&n%100<=13?'TH':({1:'ST',2:'ND',3:'RD'}[n%10]||'TH'))}
 function render(s){
  for(const k of ['teamA','scoreA','teamB','scoreB'])if(s[k]!==undefined)document.getElementById(k).textContent=s[k];
